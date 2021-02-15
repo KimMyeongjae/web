@@ -1,0 +1,56 @@
+<!DOCTYPE html>                                   <!-- html 파일임을 알림 -->
+<html>
+  <head>                                          <!-- 제목 태그-->
+    <title>이혜주 wikipedia</title>
+    <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
+    <style>
+    a {
+      color: red;
+      text-decoration: none;
+    }
+    h1 {
+      border: solid 10px pink;
+      padding: 10px;
+      color: pink;
+      font-size: 45px;
+      text-align: center;
+    }
+    img {
+      margin-top:  10px;
+    }
+    </style>                                      <!-- <style>디자인과 관련 a 태그 글꼴 빨간색으로-->
+                                                  <!-- text-decoration 텍스트 꾸미는 장식 넣는 속성 non -> 밑줄삭제 -->
+                                                  <!-- text-align 정렬-->
+                                                  <!-- border 테두리-->
+                                                  <!-- padding 콘텐츠와 테두리 간격 간격>
+  </head>
+
+  <body>                                          <!-- 본문 태그-->
+    <h1>이&nbsp&nbsp&nbsp&nbsp혜&nbsp&nbsp&nbsp주&nbsp&nbsp&nbsp백&nbsp&nbsp&nbsp과&nbsp&nbsp&nbsp사&nbsp&nbsp&nbsp전</h1>
+                                                                                                              <!--h1~h6 글자크기 갈수록 작아짐 & 줄바꿈 제목을 나타내는 태그 -->
+                                                                                                              <!-- &nbsp 띄어쓰기 -->
+    <input type="button" value="night" onclick="document.querySelector('body')
+    .style.backgroundColor='black'; document.querySelector('body').style.color='white';">
+    <input type="button" value="day" onclick="document.querySelector('body')
+    .style.backgroundColor='white'; document.querySelector('body').style.color='black';">
+    <br> <img src="1.jpg" width = "15%" height="15%" >   <!-- <img src=""> 사용할 사진을 사용중인 디렉토리에 넣어서 사용 width height로 크기 조정-->
+    <br> <strong>특징</strong>                    <!-- <strong> 글자 진하게 -->
+      <li> <a href="https://ko.dict.naver.com/#/entry/koko/10ad7abf578e46fdb416c7e258693a83" target="_blank" title="바보 설명">바보</a></li>
+                                                  <!-- <ul> 목차끼리 구별위한 띄어쓰기 -->
+                                                  <!-- <a href="페이지"> 링크연결 target="-blank" 새탭으로 연결 title="" 커서올리면 설명-->
+      <li><u>멍청이</u> </li>                       <!-- <u> 밑줄 <br> 줄띄움 tag 닫을필요 x-->
+      <li>똥개</li>                               <!-- <li> 목차 or 목록 앞에 점생기고 태그닫으면 줄바꿈-->
+      <li>맹구</li>
+
+    <p style="margin-top:10px">1996년 7월 26일생으로 상당히 바보다.             <!-- 문단 상단의 공백 크기 설정-->
+    <br>잠이 상당히 많은편이다.</p>                      <!-- <p> 문단 구분 -->
+
+    <br><strong>이혜주 최애순위</strong>
+    <ol>                                        <!-- 자동으로 목차 번호 생성 -->
+      <li>  <a href="2.jpg" target="_blank" title="똥">똥</a></li>
+      <li>  응가</li>
+      <li>  똥똥</li>
+      <li>  똥똥똥</li>
+    </ol>
+  </body>
+</html>
