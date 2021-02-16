@@ -1,13 +1,30 @@
 <!DOCTYPE html>                                   <!-- html 파일임을 알림 -->
 <html>
   <head>                                          <!-- 제목 태그-->
+    <input type="button" value="night" onclick="document.querySelector('body')
+    .style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';
+    var as = document.getElementsByTagName('a');
+    var ac = document.getElementsByTagName('h1');
+    var bor = ac.item(i);
+    for(var i=0; i<10; i++){
+    as[i].style.color = 'yellow';
+    ac[i].style.color = 'yellow';
+    ac[i].style.border = 'solid 3px yellow';}
+    document.getElementsByTagName('ol')[0].style.color = 'yellow';">
+
+    <input type="button" value="day" onclick="document.querySelector('body')
+    .style.backgroundColor='white'; document.querySelector('body').style.color='black';
+    var as = document.getElementsByTagName('a');
+    var ac = document.getElementsByTagName('h1');
+    for(var i=0; i<10; i++){
+    as[i].style.color = 'red';
+    ac[i].style.color = 'pink';
+    ac[i].style.border = 'solid 3px pink';}
+    document.getElementsByTagName('ol')[0].style.color = 'red';">
     <title>이혜주 wikipedia</title>
     <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
     <!-- &nbsp 띄어쓰기 -->
-<input type="button" value="night" onclick="document.querySelector('body')
-.style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';">
-<input type="button" value="day" onclick="document.querySelector('body')
-.style.backgroundColor='white'; document.querySelector('body').style.color='black';">
+
     <style>
     a {
       color: red;
