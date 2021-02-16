@@ -5,11 +5,12 @@
     .style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';
     var as = document.getElementsByTagName('a');
     var ac = document.getElementsByTagName('h1');
-    var bor = ac.item(i);
+    var ab = document.getElementsByTagName('ol');
     for(var i=0; i<10; i++){
     as[i].style.color = 'yellow';
     ac[i].style.color = 'yellow';
-    ac[i].style.border = 'solid 3px yellow';}
+    ac[i].style.border = 'solid 3px yellow';
+    ab[i].style.borderColor = 'yellow';}
     document.getElementsByTagName('ol')[0].style.color = 'yellow';">
 
     <input type="button" value="day" onclick="document.querySelector('body')
@@ -46,8 +47,8 @@
       display: grid;
       grid-template-columns: 620px 1fr;
     }
-    #ab{
-      border-right:3px solid pink;
+    ol {
+      border-right: solid 3px pink;
       list-style: none;
       width: 620px;
       margin: 0;
@@ -55,6 +56,10 @@
     }
     #article {
       padding-left: 15px;
+    }
+    #aa {
+      list-style: none;
+      border: 0;
     }
     </style>                                      <!-- <style>디자인과 관련 a 태그 글꼴 빨간색으로-->
                                                   <!-- text-decoration 텍스트 꾸미는 장식 넣는 속성 non -> 밑줄삭제 -->
@@ -67,7 +72,7 @@
     <h1>이&nbsp&nbsp&nbsp&nbsp혜&nbsp&nbsp&nbsp주&nbsp&nbsp&nbsp백&nbsp&nbsp&nbsp과&nbsp&nbsp&nbsp사&nbsp&nbsp&nbsp전</h1>
                                                                                                               <!--h1~h6 글자크기 갈수록 작아짐 & 줄바꿈 제목을 나타내는 태그 -->
    <div id="grid">
-       <ol id="ab">
+       <ol>
          <li><img src="1.jpg"></li>   <!-- <img src=""> 사용할 사진을 사용중인 디렉토리에 넣어서 사용 width height로 크기 조정-->
          <li><img src="3.jpg"></li>
          <li><img src="4.jpg"></li>
@@ -85,8 +90,9 @@
       <p style="margin-top:10px">1996년 7월 26일생으로 상당히 바보다.             <!-- 문단 상단의 공백 크기 설정-->
       <br>잠이 상당히 많은편이다.</p>                      <!-- <p> 문단 구분 -->
 
+
       <br><strong>이혜주 최애순위</strong>
-      <ol>                                        <!-- 자동으로 목차 번호 생성 -->
+      <ol id="aa">                                        <!-- 자동으로 목차 번호 생성 -->
         <li>  <a href="2.jpg" target="_blank" title="똥">똥</a></li>
         <li>  응가</li>
         <li>  똥똥</li>
