@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <input type="button" value="night" onclick="document.querySelector('body')
+    .style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';
+    var as = document.getElementsByClassName('h');
+    var ab = document.getElementsByClassName('b');
+    for(var i=0; i<30; i++){
+    as[i].style.color = 'yellow';
+    as[i].style.borderColor = 'yellow';
+    ab[i].style.borderColor = 'yellow';}">
+
+    <input type="button" value="day" onclick="document.querySelector('body')
+    .style.backgroundColor='white'; document.querySelector('body').style.color='black';
+    var as = document.getElementsByTagName('a');
+    var ac = document.getElementsByTagName('h1');
+    var ab = document.getElementsByTagName('ol');
+    for(var i=0; i<10; i++){
+    as[i].style.color = 'red';
+    ac[i].style.color = 'pink';
+    ac[i].style.border = 'solid 3px pink';
+    ab[i].style.borderColor = 'pink';}
+    document.getElementsByTagName('ol')[0].style.color = 'red';">
     <title>시간표</title>
     <meta charset="utf-8">
 
@@ -10,38 +30,53 @@
       text-align: center;
       margin: 0;
     }
-    .a{
-      text-align: center;
-    }
     .img {
       width: 300px;
       hight: 200px;
     }
     .b{
       border: solid 3px pink;
+      display: grid;
+      grid-template-columns: 1000px 1fr;
+    }
+    .m{
+      margin: 50px;
+      padding: 50px;
     }
   </style>
   </head>
   <body>
     <h1 class="h">시&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp간&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp표</h1>
-
+    <h3 style="text-align: center">16년도 시간표</h3>
     <div class="b">
-      <h3 class="h">16~17년도 시간표</h3>
-      <span>
+      <div>
       <input class = "img" type="image" src="16-1.jpg" value="16-1시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <input class = "img" type="image" src="16-2.jpg" value="16-2시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <input class = "img" type="image" src="17-1.jpg" value="17-1시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <input class = "img" type="image" src="17-2.jpg" value="17-2시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      </span>
     </div>
+      <input class = "img" type="image" src="16-2.jpg" value="16-2시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    </div>
+    <h3 style="text-align: center">17년도 시간표</h3>
     <div class="b">
-      <h3 class="h">18~20년도 시간표</h3>
-      <span>
+      <div>
+      <input class = "img" type="image" src="17-1.jpg" value="17-1시간표 margin=0 padding=0">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+      <input class = "img" type="image" src="17-2.jpg" value="17-2시간표 margin=0 padding=0">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+    </div>
+    <h3 style="text-align: center">18년도 시간표</h3>
+    <div class="b">
+      <div>
       <input class = "img" type="image" src="18-1.jpg" value="18-1시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
       <input class = "img" type="image" src="18-2.jpg" value="18-2시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+    </div>
+    <h3 style="text-align: center">20년도 시간표</h3>
+    <div class="b">
+      <div>
       <input class = "img" type="image" src="20-1.jpg" value="20-1시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
       <input class = "img" type="image" src="20-2.jpg" value="20-2시간표">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      </span>
+      </div
     </div>
       </body>
 </html>
