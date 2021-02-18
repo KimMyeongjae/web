@@ -1,32 +1,38 @@
 <!DOCTYPE html>                                   <!-- html 파일임을 알림 -->
 <html>
   <head>                                          <!-- 제목 태그-->
-    <input type="button" value="night" onclick="document.querySelector('body')
+
+    <audio src="henesys.mp3" controls> </audio>
+
+    <br><input type="button" value="night" onclick="document.querySelector('body')
     .style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';
     var as = document.getElementsByTagName('a');
     var ac = document.getElementsByTagName('h1');
     var ab = document.getElementsByTagName('ol');
-    for(var i=0; i<10; i++){
+    for(var i=0; i<10000; i++){
     as[i].style.color = 'yellow';
     ac[i].style.color = 'yellow';
     ac[i].style.border = 'solid 3px yellow';
-    ab[i].style.borderColor = 'yellow';}">
+    ab[i].style.borderColor = 'yellow';
+    document.childNodes[1].color = 'yellow'} aa()" >
 
     <input type="button" value="day" onclick="document.querySelector('body')
-    .style.backgroundColor='white'; document.querySelector('body').style.color='black';
+    .style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
     var as = document.getElementsByTagName('a');
     var ac = document.getElementsByTagName('h1');
     var ab = document.getElementsByTagName('ol');
-    for(var i=0; i<10; i++){
+    for(var i=0; i<200; i++){
     as[i].style.color = 'red';
     ac[i].style.color = 'pink';
     ac[i].style.border = 'solid 3px pink';
     ab[i].style.borderColor = 'pink';}
     document.getElementsByTagName('ol')[0].style.color = 'red';">
+
+
     <title>이혜주 wikipedia</title>
     <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
     <!-- &nbsp 띄어쓰기 -->
-
     <style>
     a {
       color: red;
@@ -67,15 +73,18 @@
       height: 500px;
     }
     </style>                                      <!-- <style>디자인과 관련 a 태그 글꼴 빨간색으로-->
-                                                  <!-- text-decoration 텍스트 꾸미는 장식 넣는 속성 non -> 밑줄삭제 -->
+                                                  <!-- text-decoration 텍스트 꾸미는 장식 넣는 속성 none  밑줄삭제 -->
                                                   <!-- text-align 정렬-->
                                                   <!-- border 테두리-->
-                                                  <!-- padding 콘텐츠와 테두리 간격 간격>
+                                                  <!-- padding 콘텐츠와 테두리 간격 간격-->
   </head>
 
-  <body>                                          <!-- 본문 태그-->
+
+    <!-- 본문 태그-->
+    <body>
     <h1>이&nbsp&nbsp&nbsp&nbsp혜&nbsp&nbsp&nbsp주&nbsp&nbsp&nbsp백&nbsp&nbsp&nbsp과&nbsp&nbsp&nbsp사&nbsp&nbsp&nbsp전</h1>
                                                                                                               <!--h1~h6 글자크기 갈수록 작아짐 & 줄바꿈 제목을 나타내는 태그 -->
+
    <div id="grid">
        <ol>
          <li ><input id="bb" type="image" src="1.jpg" onclick="alert('2021/02/03')"></li>
@@ -84,6 +93,11 @@
        </ol>
 
      <div id="article">
+       <h3>출&nbsp신&nbsp학&nbsp교</h3>
+       <a href="https://www.classting.com/schools/c2825f10-e55f-11e1-92e7-918870b4710d/notices" target="_blank" title="양주초">양주초</a>->
+       <a href="https://ko-kr.classting.com/schools/442467e0-0029-11e2-b2ef-351de3172b2f/news" target="_blank" title="범어중">범어중</a>->
+       <a href="http://ysnambu-h.gne.go.kr/ysnambu-h/main.do" target="_blank" title="남부고">남부고</a>->
+       <a href="http://www.pusan.ac.kr/kor/Main.do" target="_blank" title="부산대">부산대</a>
       <br> <strong>특징</strong>                    <!-- <strong> 글자 진하게 -->
         <li> <a href="https://ko.dict.naver.com/#/entry/koko/10ad7abf578e46fdb416c7e258693a83" target="_blank" title="바보 설명">바보</a></li>
                                                     <!-- <ul> 목차끼리 구별위한 띄어쓰기 -->
@@ -103,12 +117,8 @@
         <li>  똥똥</li>
         <li>  똥똥똥</li>
       </ol>
-      <br><a href="2.html">시간표</a>
-      <h3>출 신 학 교</h3>
-      <a href="https://www.classting.com/schools/c2825f10-e55f-11e1-92e7-918870b4710d/notices">양주초</a>->
-      <a href="https://ko-kr.classting.com/schools/442467e0-0029-11e2-b2ef-351de3172b2f/news">범어중</a>->
-      <a href="http://ysnambu-h.gne.go.kr/ysnambu-h/main.do">남부고</a>->
-      <a href="http://www.pusan.ac.kr/kor/Main.do">부산대</a>
+      <br> <a href="2.html">시간표</a>
+
     </div>
   </div>
   </body>
