@@ -1,22 +1,25 @@
 <!DOCTYPE html>                                   <!-- html 파일임을 알림 -->
 <html>
   <head>                                          <!-- 제목 태그-->
+    <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
+<audio src="henesys.mp3" controls loop> </audio>
 
-    <audio src="henesys.mp3" controls loop> </audio>
-
-    <br><input type="button" value="night" onclick="document.querySelector('body')
-    .style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';
-    var as = document.getElementsByTagName('a');
+<br> <input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value ==='night') {
+    document.querySelector('#night_day').value = 'day';
+    document.querySelector('body').style.backgroundColor='gray';
+    document.querySelector('body').style.color='yellow';
+    var li = document.querySelectorAll('a');
     var ac = document.getElementsByTagName('h1');
     var ab = document.getElementsByTagName('ol');
-    for(var i=0; i<10000; i++){
-    as[i].style.color = 'yellow';
+    for(var i=0; i<1000000000; i++){
+    li[i].style.color = 'yellow';
     ac[i].style.color = 'yellow';
     ac[i].style.border = 'solid 3px yellow';
-    ab[i].style.borderColor = 'yellow';
-    document.childNodes[1].color = 'yellow'} aa()" >
-
-    <input type="button" value="day" onclick="document.querySelector('body')
+    ab[i].style.borderColor = 'yellow';}
+  } else {
+    document.querySelector('#night_day').value = 'night';
+    document.querySelector('body')
     .style.backgroundColor='white';
     document.querySelector('body').style.color='black';
     var as = document.getElementsByTagName('a');
@@ -27,11 +30,15 @@
     ac[i].style.color = 'pink';
     ac[i].style.border = 'solid 3px pink';
     ab[i].style.borderColor = 'pink';}
-    document.getElementsByTagName('ol')[0].style.color = 'red';">
+    document.getElementsByTagName('ol')[0].style.color = 'red';
+  }
+">
+
+
 
 
     <title>이혜주 wikipedia</title>
-    <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
+
     <!-- &nbsp 띄어쓰기 -->
     <style>
     a {

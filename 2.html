@@ -2,19 +2,28 @@
 <html>
   <head>
     <audio src="henesys.mp3" controls loop> </audio>
-    <br><input type="button" value="night" onclick="document.querySelector('body')
-    .style.backgroundColor='gray'; document.querySelector('body').style.color='yellow';
-    var as = document.getElementsByTagName('h3');
-    for(var i=0; i<30; i++){
-    as[i].style.color = 'yellow';
-    as[i].style.borderColor = 'yellow';}">
 
-    <input type="button" value="day" onclick="document.querySelector('body')
-    .style.backgroundColor='white'; document.querySelector('body').style.color='black';
-    var as = document.getElementsByTagName('h3');
-    for(var i=0; i<10; i++){
-    as[i].style.color = 'black';
-    as[i].style.border = 'solid 3px pink';}">
+    <br> <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value ==='night') {
+        document.querySelector('#night_day').value = 'day';
+        document.querySelector('body').style.backgroundColor = 'gray';
+        document.querySelector('body').style.color = 'yellow';
+        var as = document.getElementsByTagName('h3');
+        for(var i=0; i<30; i++){
+        as[i].style.color = 'yellow';
+        as[i].style.borderColor = 'yellow';}
+
+      } else {
+        document.querySelector('#night_day').value = 'night';
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        var as = document.getElementsByTagName('h3');
+        for(var i=0; i<10; i++){
+        as[i].style.color = 'black';
+        as[i].style.border = 'solid 3px pink';}
+
+      }
+    ">
 
     <title>시간표</title>
     <meta charset="utf-8">
