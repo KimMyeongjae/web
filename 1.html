@@ -4,45 +4,35 @@
     <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
 <audio src="henesys.mp3" controls loop> </audio>
 <script>
+function setBodyColor(s,b){
+  document.querySelector('body').style.color = s;
+  document.querySelector('body').style.backgroundColor = b;
+}
+function setContentsColor(color){
+  for(var i=0; i<100; i++){
+  document.getElementsByTagName('h1')[i].style.color = color;
+  document.getElementsByTagName('h1')[i].style.borderColor = color;
+  document.getElementsByTagName('ol')[i].style.borderColor = color;}
+}
+function setLinkColor(color){
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while (i < alist.length){
+    alist[i].style.color = color;
+    i = i + 1 ;
+  }
+}
 function nightDay(self){
-    var target = document.querySelector('body');
-    var alist = document.querySelectorAll('a');
-    var ac = document.getElementsByTagName('h1');
-    var ab = document.getElementsByTagName('ol');
   if(self.value ==='night') {
     self.value = 'day';
-    target.style.backgroundColor='gray';
-    target.style.color='yellow';
-
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'yellow';
-      i = i + 1;
-    }
-
-
-    for(var i=0; i<100; i++){
-    ac[i].style.color = 'yellow';
-    ac[i].style.border = 'solid 3px yellow';
-    ab[i].style.borderColor = 'yellow';}
+    setBodyColor('yellow','gray');
+    setLinkColor('yellow');
+    setContentsColor('yellow');
   } else {
     self.value = 'night';
-    target.style.backgroundColor='white';
-    target.style.color='black';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'red';
-      i = i + 1;
-    }
-
-    var ac = document.getElementsByTagName('h1');
-    var ab = document.getElementsByTagName('ol');
-    for(var i=0; i<100; i++){
-    ac[i].style.color = 'pink';
-    ac[i].style.border = 'solid 3px pink';
-    ab[i].style.borderColor = 'pink';}
+    setBodyColor('black','white');
+    setLinkColor('red');
+    setContentsColor('pink');
     }
 }
 </script>
@@ -50,7 +40,6 @@ function nightDay(self){
 <br> <input type="button" value="night" onclick="nightDay(this);">
 
     <title>이혜주 wikipedia</title>
-
     <!-- &nbsp 띄어쓰기 -->
     <style>
     a {
@@ -98,7 +87,6 @@ function nightDay(self){
                                                   <!-- padding 콘텐츠와 테두리 간격 간격-->
   </head>
 
-
     <!-- 본문 태그-->
     <body>
     <h1>이&nbsp&nbsp&nbsp&nbsp혜&nbsp&nbsp&nbsp주&nbsp&nbsp&nbsp백&nbsp&nbsp&nbsp과&nbsp&nbsp&nbsp사&nbsp&nbsp&nbsp전</h1>
@@ -127,7 +115,6 @@ function nightDay(self){
 
       <p style="margin-top:10px">1996년 7월 26일생으로 상당히 바보다.             <!-- 문단 상단의 공백 크기 설정-->
       <br>잠이 상당히 많은편이다.</p>                      <!-- <p> 문단 구분 -->
-
 
       <br><strong>이혜주 최애순위</strong>
       <ol id="aa">                                        <!-- 자동으로 목차 번호 생성 -->
