@@ -9,14 +9,20 @@
     document.querySelector('#night_day').value = 'day';
     document.querySelector('body').style.backgroundColor='gray';
     document.querySelector('body').style.color='yellow';
-    var li = document.querySelectorAll('a');
+
     var ac = document.getElementsByTagName('h1');
     var ab = document.getElementsByTagName('ol');
     for(var i=0; i<1000000000; i++){
-    
     ac[i].style.color = 'yellow';
     ac[i].style.border = 'solid 3px yellow';
     ab[i].style.borderColor = 'yellow';}
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'yellow';
+      i = i + 1;
+    }
   } else {
     document.querySelector('#night_day').value = 'night';
     document.querySelector('body')
