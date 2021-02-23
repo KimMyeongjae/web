@@ -3,33 +3,32 @@
   <head>                                          <!-- 제목 태그-->
     <meta charset="utf-8">                        <!-- 웹브라우저에서 UTF-8방식으로 열리게 지정-->
 <audio src="henesys.mp3" controls loop> </audio>
-
-<br> <input id="night_day" type="button" value="night" onclick="
-  if(document.querySelector('#night_day').value ==='night') {
-    document.querySelector('#night_day').value = 'day';
-    document.querySelector('body').style.backgroundColor='gray';
-    document.querySelector('body').style.color='yellow';
-
+<script>
+function nightDay(self){
+    var target = document.querySelector('body');
     var alist = document.querySelectorAll('a');
+    var ac = document.getElementsByTagName('h1');
+    var ab = document.getElementsByTagName('ol');
+  if(self.value ==='night') {
+    self.value = 'day';
+    target.style.backgroundColor='gray';
+    target.style.color='yellow';
+
     var i = 0;
     while(i < alist.length){
       alist[i].style.color = 'yellow';
       i = i + 1;
     }
 
-    var ac = document.getElementsByTagName('h1');
-    var ab = document.getElementsByTagName('ol');
-    for(var i=0; i<1000000000; i++){
+
+    for(var i=0; i<100; i++){
     ac[i].style.color = 'yellow';
     ac[i].style.border = 'solid 3px yellow';
     ab[i].style.borderColor = 'yellow';}
-
-
   } else {
-    document.querySelector('#night_day').value = 'night';
-    document.querySelector('body')
-    .style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
+    self.value = 'night';
+    target.style.backgroundColor='white';
+    target.style.color='black';
 
     var alist = document.querySelectorAll('a');
     var i = 0;
@@ -38,20 +37,17 @@
       i = i + 1;
     }
 
-    var as = document.getElementsByTagName('a');
     var ac = document.getElementsByTagName('h1');
     var ab = document.getElementsByTagName('ol');
-    for(var i=0; i<200; i++){
-    as[i].style.color = 'red';
+    for(var i=0; i<100; i++){
     ac[i].style.color = 'pink';
     ac[i].style.border = 'solid 3px pink';
     ab[i].style.borderColor = 'pink';}
-    document.getElementsByTagName('ol')[0].style.color = 'red';
-  }
-">
+    }
+}
+</script>
 
-
-
+<br> <input type="button" value="night" onclick="nightDay(this);">
 
     <title>이혜주 wikipedia</title>
 
